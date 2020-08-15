@@ -7,6 +7,5 @@ def main():
     ano = int(input('Ano: '))
     day = data(dia,mes,ano)
     print(f'{dia}/{mes}/{ano}')
-
 if __name__=='__main__':
     main()
