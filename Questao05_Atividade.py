@@ -1,6 +1,3 @@
-def compras(a):
-    return
-
 def parcela_5(cinco_vz):
     return cinco_vz /5
 
