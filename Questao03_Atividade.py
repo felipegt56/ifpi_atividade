@@ -1,5 +1,5 @@
-def time(temp, h, r_h, m, r_m, s):
-    return temp, h, r_h, m, r_m, s
+def time(h, m, s):
+    return f' {h}:{m}:{s}'
 
 def main():
     tempo = int(input('tempo de duração do evento(segundos): '))
@@ -8,7 +8,8 @@ def main():
     minutos = rest_horas // 60
     rest_min = tempo % 60
     segundos = rest_min
-    print(f'O evento da fábrica durou {horas}:{minutos}:{segundos}')
+    hora = time(horas, minutos, segundos)
+    print(f'O evento da fábrica durou {hora}')
 
 if __name__=='__main__':
     main()
