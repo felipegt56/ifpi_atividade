@@ -1,18 +1,18 @@
-def media(a, b, c):
+def media_f(a, b, c):
   return (a + b + c) / 3
-
 def main():
-  nota1 = int(input('Primeira nota: '))
-  nota2 = int(input('Segunda nota: '))
-  nota3 = int(input('Terceira nota: '))
-  media_nota = media(nota1, nota2, nota3)
+  nota1 = int(input())
+  nota2 = int(input())
+  nota3 = int(input())
+  media = media_f(nota1,nota2,nota3)
+  if nota3 > 8:
+    media_final =  1
+    media = media + media_final
+    if media > 10:
+      media = 10
+    
 
-  if (nota1 + nota2 + nota3) / 3 == media_nota:
-    media_f = media_nota
-    if nota3 > 8:
-      media_f = media_nota + 1
-      if media_f > 10:
-        media_f -= 1
-    print(f'{media_f:0.2f}')
+  print(f'{media:0.2f}')
+
 if __name__=='__main__':
   main()
